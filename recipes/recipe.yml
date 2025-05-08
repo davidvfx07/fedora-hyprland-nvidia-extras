@@ -21,6 +21,7 @@ modules:
         - https://src.fedoraproject.org/rpms/fedora-repos/raw/f42/f/fedora-cisco-openh264.repo
       copr:
         - atim/starship
+        - solopasha/hyprland
       #nonfree: negativo17
     install:
       allow-erasing: true
@@ -28,6 +29,9 @@ modules:
         - xorg-x11-server-Xorg
         - xorg-x11-nvidia
         - hyprland
+        - hyprland-devel
+
+        - satty
 
         - cuda-devel
 
@@ -36,8 +40,8 @@ modules:
         #- pam-devel 
         #- libxcb-devel
 
-        - greetd
-        - tuigreet
+        #- greetd
+        #- tuigreet
 
         # Virtualization Tools
         - libvirt # Virtualization library and daemon
@@ -106,7 +110,7 @@ modules:
   - type: files
     files:
     - source: finish-setup.sh
-      destination: /usr/local/bin/finish-setup.sh
+      destination: /var/usrlocal/finish-setup.sh
     - source: finish-setup.service
       destination: /etc/systemd/system/finish-setup.service
 
@@ -122,7 +126,7 @@ modules:
     system:
       enabled:
         - libvirtd.service
-        - greetd.service
+        #- greetd.service
         #- ly.service
         - finish-setup.service
 
