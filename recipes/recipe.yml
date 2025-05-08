@@ -124,7 +124,7 @@ modules:
         - libvirtd.service
         - greetd.service
         #- ly.service
-        - apply-firstboot-kargs.service
+        - finish-setup.service
 
   - type: default-flatpaks
     system:
