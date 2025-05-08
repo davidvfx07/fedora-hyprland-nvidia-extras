@@ -31,7 +31,6 @@ modules:
         - xorg-x11-nvidia
         - hyprland
         - hyprland-devel
-        - xorg-xwayland
 
         - satty
 
