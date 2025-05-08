@@ -54,7 +54,7 @@ modules:
         - gstreamer1
         - gstreamer1-plugin-libav # FFmpeg plugin for GStreamer
         - libvkd3d
-        - intel-media-driver # Intel Media Driver for VAAPI (if you have Intel iGPU)
+        #- intel-media-driver # RPMFUSION Intel Media Driver for VAAPI (if you have Intel iGPU)
 
         - openh264 # Cisco OpenH264 codec
 
